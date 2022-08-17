@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --primary-color: #010712;
+    --secondary-color: #818386;
+    --bg-color: #fcfdfd;
+    --button-color: #3b3636;
+    --h1-color: #3f444c;
+}
+
+[data-theme="dark"] {
+    --primary-color: #FCFDFD;
+    --secondary-color: #818386;
+    --bg-color: #010712;
+    --button-color: #818386;
+    --h1-color: #FCFDFD;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.left-col {
+    width: 45vw;
+    height: 100%;
+    background-image: url("https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTYyNDg1MjE3MTI1Mjc5Mzk4/topic-london-gettyimages-760251843-promo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.right-col {
+    background: var(--bg-color);
+    width: 50vw;
+    height: 100vh;
+    padding: 5rem 3.5rem;
+}
+
+h1, label, button, .description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+h1 {
+    color: var(--h1-color);
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    font-weight: 300;
+}
+
+p {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    width: 40vw;
+    margin: 0.25rem 0;
+}
+
+label, .description {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 0.625rem;
+}
+
+form {
+    width: 31.25rem;
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+input, textarea, label {
+    width: 40vw;
+    display: block;
+}
+
+p, placeholder,input, textarea {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--primary-color);
+}
+

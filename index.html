@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="left-col"></div>
+        <div class="right-col">
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <div class="slider round"></div>
+                </label>
+                <div class="description">Dark Mode</div>
+            </div>
+            <h1>Contact us</h1>
+                <form id="contact-form" method="post">
+                    <label for="name">Full name</label>
+                    <input type="text" name="name" id="name" placeholder="Your full name" required="">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Your email address" required="">
+                    <label for="message">Message</label>
+                    <textarea name="message" rows="6" id="message" placeholder="Your message" required=""></textarea>
+                    <button id="submit" type="submit" name="submit">Send</button>
+                </form>
+                <div id="error"></div>
+                <div id="success-msg"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
