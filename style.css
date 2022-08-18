@@ -192,3 +192,69 @@ input:checked + .slider::before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+#error, #success-msg {
+    width: 40vw;
+    margin: 0.125rem 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-color);
+}
+
+#success-msg {
+    transition-delay: 3s;
+}
+
+@media only screen and (max-width: 950px) {
+    .logo {
+        width: 8rem;
+    }
+    h1 {
+        font-size: 1.75rem;
+    }
+    p {
+        font-size: 0.7rem;
+    }
+    input, textarea, button {
+        font-size: 0.65rem;
+    }
+    .description {
+        font-size: 0.3rem;
+        margin-left: 0.4rem;
+    }
+    button {
+        width: 7rem;
+    }
+    .theme-switch-wrapper {
+        width: 120px;
+    }
+    .theme-switch {
+        height: 28px;
+        width: 50px;
+    }
+
+    .theme-switch input {
+        display: none;
+    }
+
+    .slider:before {
+        background-color: #fff;
+        bottom: 0.25rem;
+        content: "";
+        width: 20px;
+        height: 20px;
+        left: 0.25rem;
+        position: absolute;
+        transition: .4s;
+    }
+    input:checked + .slider:before {
+        transform: translateX(16px);
+    }
+    .slider.round {
+        border-radius: 15px;
+    }
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}
